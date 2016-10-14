@@ -3,14 +3,14 @@ package com.sgk.domain;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
-/**
- * Created by gebczyks on 2016-10-11.
- */
 @Entity
 @Data
 public class Employee {
+    @Id
+    private Long id;
     private String firstName;
     private String secondName;
     private String department;
