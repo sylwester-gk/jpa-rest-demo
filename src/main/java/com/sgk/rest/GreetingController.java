@@ -1,6 +1,8 @@
 package com.sgk.rest;
 
 import com.sgk.resource.Greeting;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.hateoas.ExposesResourceFor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
+@Slf4j
 @RestController
+@ExposesResourceFor(value = Greeting.class)
 public class GreetingController {
 
     private static final String GREET = "Welcome, %s!";
