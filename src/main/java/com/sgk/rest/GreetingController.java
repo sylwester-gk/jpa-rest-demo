@@ -1,4 +1,4 @@
-package com.sgk.controller;
+package com.sgk.rest;
 
 import com.sgk.resource.Greeting;
 import org.springframework.http.HttpStatus;
