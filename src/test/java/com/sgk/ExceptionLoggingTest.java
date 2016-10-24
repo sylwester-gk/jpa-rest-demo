@@ -1,12 +1,12 @@
 package com.sgk;
 
 import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Slf4j
+@Log4j2
 public class ExceptionLoggingTest {
 
     private static final Logger LOG = LoggerFactory.getLogger(ExceptionLoggingTest.class);
